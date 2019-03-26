@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>上传测试页</title>
+</head>
+<body>
+<div>
+    <form method="post" enctype="multipart/form-data" action="{% url 'api.upload' %}">
+        {% csrf_token %}
+        <div>
+            <label>
+                <a>用户名：</a>
+                <input type="text" name="username" value="1607020115">
+            </label>
+        </div>
+        <div><input type="file" name="file"/></div>
+        <button type="submit">上传</button>
+    </form>
+</div>
+</body>
+</html>

@@ -1,3 +1,9 @@
+.*
+Data/migrations/*
+
+# user upload
+static/usr/uploads
+
 # pycharm
 .idea
 
